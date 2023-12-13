@@ -1,0 +1,73 @@
+<mat-toolbar class="header mat-elevation-z4">
+    <span>
+        <a [matMenuTriggerFor]="menu">
+            <p class="logo">i</p>
+        </a>
+    </span>
+    <span class="title-group">
+        <a>
+            <i class="material-icons">
+                login
+            </i>
+            Login
+        </a>
+    </span>
+    <mat-menu #menu="matMenu" class="menu">
+        <div *ngIf="configView" class="menu-item" routerLink="config">
+            <i class="material-icons">
+                settings
+            </i>
+            <button mat-menu-item>
+                Config
+            </button>
+        </div>
+        <div *ngIf="homeView" class="menu-item" routerLink="home">
+            <i class="material-icons">
+                home
+            </i>
+            <button mat-menu-item>
+                Home
+            </button>
+        </div>
+        <div *ngIf="escalasView" class="menu-item" routerLink="escalas">
+            <i class="material-icons">
+                dashboard
+            </i>
+            <button mat-menu-item>
+                Escalas
+            </button>
+        </div>
+        <div *ngIf="eventosView" class="menu-item" routerLink="eventos">
+            <i class="material-icons">
+                event
+            </i>
+            <button mat-menu-item>
+                Eventos
+            </button>
+        </div>
+        <div *ngIf="associadosView" class="menu-item" routerLink="associados">
+            <i class="material-icons">
+                people
+            </i>
+            <button mat-menu-item>
+                Associados
+            </button>
+        </div>
+        <div *ngIf="departamentosView" class="menu-item" routerLink="departamentos">
+            <i class="material-icons">
+                house
+            </i>
+            <button mat-menu-item>
+                Departamentos
+            </button>
+        </div>
+        <div *ngIf="usersView" class="menu-item" routerLink="users">
+            <i class="material-icons">
+                person
+            </i>
+            <button mat-menu-item>
+                Users
+            </button>
+        </div>
+    </mat-menu>
+</mat-toolbar>
