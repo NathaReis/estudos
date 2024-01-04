@@ -33,7 +33,6 @@ body
     width: 30px;
     height: 30px;
     background: #eee;
-    margin: 0 4px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px #eeeeee6e,
     0 0 50px #eee,
@@ -45,11 +44,11 @@ body
 {
     0%
     {
-        transform: translateY(100vh) scale(0); /*Scale tamanho da bolha 100vh == 100% da tela*/
+        transform: translateY(-10vh) scale(calc(0));
     }
     100% 
     {
-        transform: translateY(-10vh) scale(calc(1));
+        transform: translateY(100vh) scale(1); /*Scale tamanho da bolha 100vh == 100% da tela*/
     }
 }
 
@@ -59,4 +58,44 @@ body
     box-shadow: 0 0 0 10px #2dcdff44,
     0 0 50px #2dcdff,
     0 0 100px #2dcdff;
+}
+
+.nos 
+{
+    position: absolute;
+    bottom: 0;
+}
+
+.img 
+{
+    position: absolute;
+    bottom: 0;
+}
+
+.chao
+{
+    width: 100vw;
+    height: 200px;
+    background-color: #070e1a;
+    position: absolute;
+    bottom: 0;
+}
+
+.box 
+{
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .vidro 
+{
+    width: 80vw;
+    height: 40vh;
+    background: #0000;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 50px #0000004d;
 }
