@@ -120,9 +120,9 @@
     pointer-events: none;
 }
 
-.perfil:hover .content img
+.hide 
 {
-    opacity: 0;
+    display: none;
 }
 
 .controls

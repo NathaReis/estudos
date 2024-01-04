@@ -10,6 +10,7 @@ const $next = document.querySelector("#next")
 const $random = document.querySelector("#random")
 const $reload = document.querySelector("#reload")
 const $perfil = document.querySelector(".perfil")
+let intervalo;
 
 const config = {
     vol: .5,
@@ -20,21 +21,21 @@ const config = {
 
 const musics = [
     {
-        nome: 'Meu Bem Querer',
-        recados: 'Meiga',
-        src: './music/meu_bem_querer.mp3',
-        img: './img/perfil_t.jpg'
-    },
-    {
         nome: 'Abismo',
-        recados: 'Meiga',
+        recados: 'ESPERTA',
         src: './music/abismo.mp3',
         img: './img/perfil_t.jpg'
     },
     {
         nome: 'De Olhos Abertos',
-        recados: 'Meiga',
+        recados: 'LINDA',
         src: './music/de_olhos_abertos.mp3',
+        img: './img/perfil_t.jpg'
+    },
+    {
+        nome: 'Meu Bem Querer',
+        recados: 'MEIGA',
+        src: './music/meu_bem_querer.mp3',
         img: './img/perfil_t.jpg'
     },
 ]
@@ -99,6 +100,13 @@ $random.onclick = () => f_ran();
 const f_play = () =>
 {
     $audio.play()
+    intervalo = setInterval(() =>
+    {
+        if($audio.currentTime == $audio.duration)
+        {
+            f_selected($pause)
+        }
+    },1)
     f_selected($play)
 }//Play
 $play.onclick = () => f_play();
@@ -106,6 +114,7 @@ $play.onclick = () => f_play();
 const f_pause = () =>
 {
     $audio.pause()
+    clearInterval(intervalo)
     f_selected($pause)
 }//Pause
 $pause.onclick = () => f_pause();
@@ -168,6 +177,7 @@ const f_selected = (button) =>
 $perfil.addEventListener("click", () =>
 {
     $perfil.classList.toggle('muted')
+    $img.classList.toggle('hide')
     const classes = $perfil.classList
     let cont = 0
     classes.forEach(classe =>
@@ -186,4 +196,4 @@ $perfil.addEventListener("click", () =>
         config.vol = .5
     }//Se existir a classe muted
     $audio.volume = config.vol
-})
+})//Style
