@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <ul id="scene">
+            <li class="layer" data-depth="0">
+                <img src="./img/1.png">
+            </li>
+            <li class="layer" data-depth="0">
+                <img src="./img/2.png">
+            </li>
+            <li class="layer" data-depth="0">
+                <img src="./img/3.png" alt="">
+            </li>
+            <li class="layer" data-depth="0">
+                <img src="./img/3.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <script src="./parallax.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var scene = document.querySelector('#scene')
+        var parallax = new Parallax(scene)
+    </script>
+</body>
+</html>

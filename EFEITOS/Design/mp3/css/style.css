@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+/*font-family: 'Cinzel', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap');
+/*font-family: 'Gayathri', sans-serif;*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #210909;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mpe
+{
+    width: 250px;
+    height: 400px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #0005;
+    border: 4px solid #000000;
+    border-radius: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: #b44343;
+}
+
+.tela
+{
+    width: inherit;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.tela .perfil 
+{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: #091c21;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil::before
+{
+    content: '';
+    position: absolute;
+    inset: 0px 60px;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    transition: .3s;
+    animation: animate 2.5s linear infinite;
+}
+
+.perfil:hover::before
+{
+    inset: -20px 0px;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.perfil::after
+{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background-color: #091c21;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content
+{
+    position: absolute;
+    inset: 20px;
+    border: 6px solid #051013;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gayathri', sans-serif;
+    color: #eee;
+    font-weight: 300;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.content img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.perfil:hover .content img
+{
+    opacity: 0;
+}
+
+.controls
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    width: 250px;
+}
+
+.controls svg 
+{
+    width: 40px;
+    padding: 5px;
+    fill: #eee;
+    box-shadow: 2px 3px 5px #0008;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+    margin: 5px;
+}
+
+.controls svg:hover
+{
+    box-shadow: 1px 2px 3px #0008;
+}
+
+.controls svg.control-selected
+{
+    box-shadow: 1px 2px 3px #0008;
+    background: #091c21;
+}
+
+.controls svg.control-hide
+{
+    display: none;
+}
+
+.controls svg.control-center
+{
+    background: #091c21;
+}
+
+.controls svg.control-random-selected
+{
+    background: #210909;
+}
+
+.title
+{
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Cinzel', serif;
+    height: 10vh;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 3px #0004;
+}
+
+.muted
+{
+    opacity: .6;
+}
