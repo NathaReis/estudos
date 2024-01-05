@@ -11,6 +11,7 @@
 
 .mpe-box
 {
+    position: relative;
     padding: 10px;
     border-radius: 50px;
     background: linear-gradient(#f00202 0%, 
@@ -170,9 +171,9 @@
     margin: 5px;
 }
 
-.controls svg:hover
+.controls svg.control-selected
 {
-    box-shadow: 1px 2px 3px #0008;
+    box-shadow: 1px 2px 3px #ffffff77, -1px -2px 3px #00000077;
 }
 
 .controls svg.control-hide
@@ -203,11 +204,45 @@
 
 .muted
 {
-    opacity: .6;
+    opacity: .8;
 }
 
 #progress
 {
     width: 250px;
     margin-top: 20px;
+}
+
+.v
+{
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    border-radius: 30px;
+    border: 2px solid #ff7d7d;
+    transform: rotateY(-50deg);
+    box-shadow: 5px 0 0 #272727ab;
+    left: 0;
+    cursor: pointer;
+}
+
+.vol_selected
+{
+    box-shadow: 3px 0 0 #272727ab;
+    transform: rotateY(-55deg);
+}
+
+.vol_plus
+{
+    top: 100px;
+}
+
+.vol 
+{
+    top: 150px;
 }

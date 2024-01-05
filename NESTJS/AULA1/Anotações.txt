@@ -1,0 +1,19 @@
+Baixe a CLI do nest - na documentação
+Crie um app - nest new nome_app
+
+Inversão e Injeção de dependências:
+	Inversão:
+		CONTROLLER depende do SERVICE, logo 
+		ele deve receber suas dependências 
+		como parâmetros. Por isso quem o
+		chama é quem envia as dependências.
+		Por isso o nome é INVERSÃO DE DEPEN
+		DÊNCIAS.
+	Injeção:
+		O CONTROLLER indentifica que o 
+		SERVICE é um provider, pelo construtor
+		que recebe uma variável do tipo AppService
+		e automaticamente o nest sabe de onde 
+		virá os parâmetros. AppService possui o 
+		Decorate @Injectable.
+

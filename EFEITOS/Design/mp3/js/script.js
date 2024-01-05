@@ -4,6 +4,7 @@ const $title = document.querySelector(".title")
 const $img = document.querySelector(".img")
 const $recado = document.querySelector(".recado")
 const $btns = document.querySelectorAll(".controls svg")
+const $vols = document.querySelectorAll(".v")
 const $play = document.querySelector("#play")
 const $pause = document.querySelector("#pause")
 const $last = document.querySelector("#last")
@@ -12,19 +13,12 @@ const $random = document.querySelector("#random")
 const $reload = document.querySelector("#reload")
 const $perfil = document.querySelector(".perfil")
 const $progress = document.querySelector("#progress")
+const $vol_plus = document.querySelector(".vol_plus")
+const $vol = document.querySelector(".vol")
 let intervalo;
 
-$click.volume = .1
-$btns.forEach(btn =>
-    {
-        btn.addEventListener("mousedown", () => $click.play())
-        btn.addEventListener("touchdown", () => $click.play())
-        btn.addEventListener("mouseup", () => $click.play())
-        btn.addEventListener("touchup", () => $click.play())
-    })
-
 const config = {
-    vol: .5,
+    vol: 1,
     ind: 0,
     ran: false,
     block_list: []
@@ -171,6 +165,20 @@ const f_last = () =>
 }//Last
 $last.onclick = () => f_last();
 
+const f_vol_plus = () =>
+{
+    config.vol = config.vol + .1
+    $audio.volume = config.vol
+}
+$vol_plus.onclick = () => f_vol_plus()
+
+const f_vol = () =>
+{
+    config.vol = config.vol - .1
+    $audio.volume = config.vol
+}
+$vol.onclick = () => f_vol()
+
 const f_selected = (button) =>
 {
     if(button.id == 'play' || button.id == 'pause')
@@ -211,3 +219,49 @@ $perfil.addEventListener("click", () =>
     }//Se existir a classe muted
     $audio.volume = config.vol
 })//Style
+
+$click.volume = .02
+$btns.forEach(btn =>
+    {
+        btn.addEventListener("mousedown", () =>
+        {
+            $click.play()
+            btn.classList.toggle('control-selected')
+        })
+
+        btn.addEventListener("mouseup", () =>
+        {
+            $click.play()
+            btn.classList.toggle('control-selected')
+        })
+        btn.addEventListener("touchstart", () =>
+        {
+            $click.play()
+            btn.classList.toggle('control-selected')
+        })
+        btn.addEventListener("touchend", () =>
+        {
+            $click.play()
+            btn.classList.toggle('control-selected')
+        })
+    })//Click
+$vols.forEach(vol =>
+    {
+        vol.addEventListener("mousedown", () =>
+        {
+            vol.classList.toggle('vol-selected')
+        })
+
+        vol.addEventListener("mouseup", () =>
+        {
+            vol.classList.toggle('vol-selected')
+        })
+        vol.addEventListener("touchstart", () =>
+        {
+            vol.classList.toggle('vol-selected')
+        })
+        vol.addEventListener("touchend", () =>
+        {
+            vol.classList.toggle('vol-selected')
+        })
+    })//Click
