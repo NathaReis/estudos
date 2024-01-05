@@ -11,6 +11,7 @@ const $next = document.querySelector("#next")
 const $random = document.querySelector("#random")
 const $reload = document.querySelector("#reload")
 const $perfil = document.querySelector(".perfil")
+const $progress = document.querySelector("#progress")
 let intervalo;
 $click.volume = .2
 
@@ -105,9 +106,12 @@ const f_play = () =>
     $audio.play()
     intervalo = setInterval(() =>
     {
+        $progress.min = 0
+        $progress.max = $audio.duration
+        $progress.value = $audio.currentTime
         if($audio.currentTime == $audio.duration)
         {
-            f_selected($pause)
+            f_pause()
         }
     },1)
     f_selected($play)
@@ -140,7 +144,7 @@ const f_next = () =>
     {
         config.ind = pos_atual + 1
     }
-    f_selected($pause)
+    f_pause()
     f_selected_music()
 }//Next
 $next.onclick = () => f_next();
@@ -156,7 +160,7 @@ const f_last = () =>
     {
         config.ind = pos_atual - 1
     }
-    f_selected($pause)
+    f_pause()
     f_selected_music()
 }//Last
 $last.onclick = () => f_last();

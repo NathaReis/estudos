@@ -11,7 +11,7 @@
 
 :root 
 {
-    --background: #210909;
+    --background: #5a5a5a;
     --secondColor: #091c21;
     --sizePerfil: 200px;
 }
@@ -40,10 +40,10 @@
 {
     content: '';
     position: absolute;
-    height: 60px;
+    height: 30px;
     width: 250px;
     background: #0006;
-    bottom: 20px;
+    bottom: 30px;
     border-radius: 50px;
     filter: blur(10px);
 }
@@ -90,13 +90,15 @@
     background-color: var(--secondColor);
     border-radius: 50%;
     overflow: hidden;
+    box-shadow: 0 0 5px 5px #00000048;
 }
 
 .perfil::before
 {
     content: '';
     position: absolute;
-    inset: 0px calc(var(--sizePerfil) / 5);
+    /*inset: 0px calc(var(--sizePerfil) / 5);*/
+    inset: -20px 0px;
     background: linear-gradient(315deg, #00ccff, #d400d4);
     transition: .3s;
     animation: animate 2.5s linear infinite;
@@ -191,12 +193,6 @@
     box-shadow: 1px 2px 3px #0008;
 }
 
-.controls svg.control-selected
-{
-    box-shadow: 1px 2px 3px #0008;
-    background: #091c21;
-}
-
 .controls svg.control-hide
 {
     display: none;
@@ -226,4 +222,10 @@
 .muted
 {
     opacity: .6;
+}
+
+#progress
+{
+    width: 250px;
+    margin-top: 20px;
 }
