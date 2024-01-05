@@ -9,29 +9,69 @@
     margin: 0;
 }
 
+:root 
+{
+    --background: #210909;
+    --secondColor: #091c21;
+    --sizePerfil: 200px;
+}
+
 .container
 {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: #210909;
+    background-color: var(--background);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.mpe-box
+{
+    padding: 10px;
+    border-radius: 50px;
+    background: linear-gradient(#f00202 0%, 
+    #bd0404 10%, #7d0404 50%,
+    #4a0202 100%);
+}
+
+.mpe-box::before
+{
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 250px;
+    background: #0006;
+    bottom: 20px;
+    border-radius: 50px;
+    filter: blur(10px);
+}
+
 .mpe
 {
+    position: relative;
     width: 250px;
     height: 400px;
-    padding: 20px;
-    box-shadow: 2px 2px 10px #0005;
-    border: 4px solid #000000;
     border-radius: 50px;
     display: grid;
     align-items: center;
     justify-content: center;
-    background: #b44343;
+    background: linear-gradient(#f06060 0%,
+    #a30505 60%, #4d0202 100%);
+}
+
+.glass
+{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    background: #ffffff00;
+    width: inherit;
+    height: inherit;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px;
 }
 
 .tela
@@ -45,9 +85,9 @@
 .tela .perfil 
 {
     position: relative;
-    width: 250px;
-    height: 250px;
-    background-color: #091c21;
+    width: var(--sizePerfil);
+    height: var(--sizePerfil);
+    background-color: var(--secondColor);
     border-radius: 50%;
     overflow: hidden;
 }
@@ -56,7 +96,7 @@
 {
     content: '';
     position: absolute;
-    inset: 0px 60px;
+    inset: 0px calc(var(--sizePerfil) / 5);
     background: linear-gradient(315deg, #00ccff, #d400d4);
     transition: .3s;
     animation: animate 2.5s linear infinite;
@@ -84,7 +124,7 @@
     content: '';
     position: absolute;
     inset: 6px;
-    background-color: #091c21;
+    background-color: var(--secondColor);
     border-radius: 50%;
     z-index: 1;
 }
