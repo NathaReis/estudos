@@ -13,7 +13,15 @@ const $reload = document.querySelector("#reload")
 const $perfil = document.querySelector(".perfil")
 const $progress = document.querySelector("#progress")
 let intervalo;
-$click.volume = .2
+
+$click.volume = .1
+$btns.forEach(btn =>
+    {
+        btn.addEventListener("mousedown", () => $click.play())
+        btn.addEventListener("touchdown", () => $click.play())
+        btn.addEventListener("mouseup", () => $click.play())
+        btn.addEventListener("touchup", () => $click.play())
+    })
 
 const config = {
     vol: .5,
@@ -26,20 +34,20 @@ const musics = [
     {
         nome: 'Abismo',
         recados: 'ESPERTA',
-        src: './music/abismo.mp3',
-        img: './img/p_um.jpg'
+        src: '../music/abismo.mp3',
+        img: '../img/p_um.jpg'
     },
     {
         nome: 'De Olhos Abertos',
         recados: 'LINDA',
-        src: './music/de_olhos_abertos.mp3',
-        img: './img/p_dois.jpg'
+        src: '../music/de_olhos_abertos.mp3',
+        img: '../img/p_dois.jpg'
     },
     {
         nome: 'Meu Bem Querer',
         recados: 'MEIGA',
-        src: './music/meu_bem_querer.mp3',
-        img: './img/p_tres.jpg'
+        src: '../music/meu_bem_querer.mp3',
+        img: '../img/p_tres.jpg'
     },
 ]
 
@@ -97,7 +105,6 @@ const f_ran = () =>
     {
         config.ran = false
     }//Se existir a classe random
-    $click.play()
 }//Random
 $random.onclick = () => f_ran();
 
@@ -129,7 +136,6 @@ $pause.onclick = () => f_pause();
 const f_reload = () =>
 {
     $audio.currentTime = 0
-    $click.play()
 }//Reload
 $reload.onclick = () => f_reload();
 
@@ -167,7 +173,6 @@ $last.onclick = () => f_last();
 
 const f_selected = (button) =>
 {
-    $click.play()
     if(button.id == 'play' || button.id == 'pause')
     {
         if(button.id == 'play')

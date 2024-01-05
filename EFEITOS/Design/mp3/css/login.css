@@ -1,0 +1,93 @@
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--background);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-msg
+{
+    position: relative;
+}
+
+.box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 250px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.message
+{
+    font-family: 'Gayathri', sans-serif;
+    color: #eee;
+    text-align: center;
+    text-shadow: 1px 2px 3px #0004;
+    font-size: 1.5rem;
+    transform: rotateZ(-90deg);
+    font-weight: 500;
+}
+
+.ico 
+{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.ico img
+{
+    width: 150px;
+    filter: sepia(100%);
+}
+
+.btn
+{
+    color: #eee;
+    font-family: 'Gayathri', sans-serif;
+    width: 250px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.box:hover
+{
+    box-shadow: 0 0 0 5px #e7e7e72a,
+    0 0 50px #e7e7e7,
+    0 0 100px #e7e7e7;
+    padding: 20px;
+    border-radius: 50px 50px 0 0;
+    background: #ff8080;
+}
+
+.box:hover > .message
+{
+    color: #333;
+}
+
+.box:hover > .ico img
+{
+    filter: sepia(0%);
+}
+
+.box-msg:hover > .btn
+{
+    top: auto;
+    bottom: 1px;
+    opacity: 1;
+}
