@@ -1,0 +1,15 @@
+CLASSES
+
+Nomes
+Atributos - características
+Métodos - comportamento
+
+Ex.:
+Mamífero
+    data de nascimento
+    peso
+    energia
+
+    comer
+    mover
+    mamar

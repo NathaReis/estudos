@@ -1,0 +1,13 @@
+POO
+
+Pilares:
+    Abstração:
+        Transformar um problema do mundo real para o mais próximo possível para o 
+        desenvolvimento na programação. Representaçãos dos objetos envolvidos (entidades)
+        no código, como uma para produto, outro para cliente... Como um models Interface.
+    Encapsulamento:
+        Ajuda na proteção.
+    Herança:
+        Ajuda a reutilizar o código.
+    Polimorfismo:
+        Dinamismo para trabalhar chamadas com comportamentos diferentes por debaixo dos panos.
