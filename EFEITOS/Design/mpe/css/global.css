@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+/*font-family: 'Cinzel', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap');
+/*font-family: 'Gayathri', sans-serif;*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+:root 
+{
+    --background: #091921;
+    --secondColor: #091e21;
+    --sizePerfil: 200px;
+}
