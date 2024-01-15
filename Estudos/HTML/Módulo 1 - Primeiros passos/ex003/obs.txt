@@ -1,0 +1,19 @@
+*Domínio e Hospedagem*
+
+Domínio - nome
+Hospedagem - local
+
+Domínio é pago anualmente, tem nome único e vários TLDs
+Hospedagem espaço para armazenar os arquivos, paga mensalmente
+    espaço, memória, recursos.
+
+*URL*
+Localizador de Recurso Único 
+
+www     =   sub-domínio
+.nome   =   nome do domínio
+.com    = 
+            TLD (Domínio em alto nível)
+            GTLD (Genéricos, ex.: gov - governamental, edu - educacional...) 
+            CCTLD (Código País, ex.: br - Brasil)
+/page   =   caminho

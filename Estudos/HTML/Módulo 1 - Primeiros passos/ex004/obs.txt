@@ -1,0 +1,12 @@
+A HTML (liguagem de marcação)
+AS CSS (linguagem de folhas de estilo)
+
+HTML: (Conteúdo)
+Hypertext
+Markup
+Language
+
+CSS: (Estilo)
+Cascading
+Style
+Sheets

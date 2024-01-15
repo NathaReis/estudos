@@ -1,0 +1,32 @@
+*Tabela de medida*
+
+8 bits > 1 byte
+1024 bytes > 1 KB
+1024 KB > 1 MB
+1024 MB > 1 GB
+1024 GB > 1 TB
+1024 TB > 1 PB
+1024 PB > 1 EB 
+1024 EB > 1 ZB 
+1024 ZB > 1 YB 
+MB = MegaBytes / Mais usados em armazenamento
+Mb = MegaBits / Mais usados em transmissão
+
+*Modem*
+
+Faz MOdulação e DEMulação - que é a transferência 
+de ondas do PC para um telefone (entre aparelhos)
+
+*Linha*
+Cliente - Modem - Internet - Servidor
+
+*DNS*
+
+Sistema de nome de Domínio
+Ele nomeia os IPs, que são os endereços
+
+*Rotas*
+
+Cada pacote pode ir por meio de rotas diferentes
+e depois se juntarem no cliente, formando o dado
+completo.

@@ -1,0 +1,10 @@
+Frontend
+*client-side*
+Tecnologias para o cliente como: HTML CSS e JS
+
+Backend
+*server-side*
+Tecnologias para servidores: PHP JS (nodejs) PYTHON C# RUBY JAVA
+
+Full-stack
+Utiliza ambas as tecnologias
