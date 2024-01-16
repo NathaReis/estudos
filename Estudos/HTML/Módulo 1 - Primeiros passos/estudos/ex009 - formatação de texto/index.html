@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{text-align: center;}
+        body 
+        {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden auto;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+        }
+    </style>
 </head>
 <body>
     <h1>Formatação de texto</h1>
@@ -11,5 +24,48 @@
     <p><b>De forma</b> <strong>e semântico</strong></p>
     <h2>Italico</h2>
     <p><i>De forma</i> <em>e semântico</em></p>
+    <h2>Marcado</h2>
+    <p><mark style="background-color: green; color: #fff;">Marcado</mark></p>
+    <hr>
+    <h2>Grande é obsoleto</h2>
+    <p>Normal <big>Grande</big></p>
+    <h2>Pequeno</h2>
+    <p>Normal <small>pequeno</small></p>
+    <h2>Texto deletado</h2>
+    <p>Normal <del>Texto deletado</del></p>
+    <h2>Texto inserido</h2>
+    <p>Normal <ins>Texto inserido</ins></p>
+    <h2>Texto inserido obsoleto</h2>
+    <p>Normal <u>Texto inserido</u></p>
+    <h2>Texto sobrescrito</h2>
+    <p>x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>H<sub>2</sub>O</p>
+    <hr>
+    <h1>Formatações</h1>
+    <h2>Código fonte</h2>
+    <p>O comando <code>document.querySelector('teste')</code> é escrito com uma fonte monoespaçada</p>
+    <h2>Código fonte e Pré-formatado</h2>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num} é ÍMPAR')
+            print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo <q>O computador é um burro muito rápido</q></p>
+    <h2>Sitações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigo:</p>
+    <blockquote cite="https://www.youtube.com/watch?v=4ynvsrkamt8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=24">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate beatae deserunt obcaecati vero amet rerum distinctio hic saepe minima quaerat, veritatis provident debitis porro sunt natus! Distinctio aliquid odio facilis.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou aprendendo <abbr title="HyperText Markup Language">HTML</abbr></p>
+    <h2>Texte invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo HTML e CSS</bdo></p>
 </body>
 </html>

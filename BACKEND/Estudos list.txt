@@ -1,0 +1,20 @@
+BACKEND
+
+Linguagem 		NodeJS 
+Framework 		NestJS
+DB 	  		MySQL || PostgreSQL || MS Sql server
+Message Brokers 	RabbitMQ || Kafka || Kinesses SQS / SNS
+Search Engine 		Elasticsearch || Solr
+GIT
+
+CONCEITUAL
+Estruturas de dados
+Sistemas operacionais
+Arquitetura orientada a serviços
+Design patterns
+APIs 			Rest
+Autenticação 		Oauth || Basic Authentication || Token authentication
+Cache			Clente side && Server side || Memcached || Redis
+Testes			Unitários && Funcional && integração
+Containerization	Docker
+Web servers 		Apache || nginx || IIS
