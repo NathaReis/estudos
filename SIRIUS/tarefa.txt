@@ -1,0 +1,30 @@
+VIC - Backend config config.json = config_prefisan_teste.json
+carlos.astitec
+Vic@2020
+
+Aba de Configurações:
+	menu.component.ts
+	obs.: app.routing para achar as páginas
+New Page:
+	ConsultaRelatoriosComponent
+
+Criar um CRUD de BRelatorios
+Visualização em tabela 
+Edição e exclusão
+
+{
+	Criar page usando o que já existe
+	Buscar dados do banco
+	Preencher tabela com eles
+	Criar novos dados
+	Editar
+	Excluir
+}
+
+Mexer no BSistemas
+
+Obs.: Fernando falou sobre BSistemas e a visualização dos usuários de cada página.
+Fazer a relação dessa nova página no BSistemas, para editar quem poderá visualizar.
+
+
+Referência: Página Gerencial (Richard)
