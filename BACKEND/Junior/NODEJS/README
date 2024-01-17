@@ -1,3 +1,4 @@
 Instalações 
 Express: npm i express --save
 Router: npm i router --save
+Mysql: npm i mysql2 --save
