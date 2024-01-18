@@ -9,13 +9,15 @@ New Page:
 	ConsultaRelatoriosComponent
 
 Criar um CRUD de BRelatorios
-Visualização em tabela 
+
+Visualização em tabela ok
+
 Edição e exclusão
 
 {
-	Criar page usando o que já existe
-	Buscar dados do banco
-	Preencher tabela com eles
+	Criar page usando o que já existe ok
+	Buscar dados do banco ok
+	Preencher tabela com eles ok
 	Criar novos dados
 	Editar
 	Excluir
@@ -26,5 +28,6 @@ Mexer no BSistemas
 Obs.: Fernando falou sobre BSistemas e a visualização dos usuários de cada página.
 Fazer a relação dessa nova página no BSistemas, para editar quem poderá visualizar.
 
+DICA: Aprender a usar a aptable (mais personalizavel) / REGEX (interessante)
 
-Referência: Página Gerencial (Richard)
+// Referência: Página Gerencial (Richard)
