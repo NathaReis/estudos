@@ -12,6 +12,8 @@ Criar um CRUD de BRelatorios
 
 Visualização em tabela ok
 
+CAMPOS: Descrição/Sistema/BaseRM/SQL
+
 Edição e exclusão
 
 {
@@ -29,5 +31,4 @@ Obs.: Fernando falou sobre BSistemas e a visualização dos usuários de cada p�
 Fazer a relação dessa nova página no BSistemas, para editar quem poderá visualizar.
 
 DICA: Aprender a usar a aptable (mais personalizavel) / REGEX (interessante)
-
-// Referência: Página Gerencial (Richard)
+OLHAR sobre: POWERBY (powerbiai) 
