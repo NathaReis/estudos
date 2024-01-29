@@ -1,0 +1,27 @@
+        TAD
+
+        
+
+TIPO DE DADOS: 
+define o conjunto de valores (domínio) que uma variável pode assumir.
+Ex.: int 
+... -2, -1, 0, 1, 2, ...
+
+ESTRUTURA DE DADOS: 
+trata-se de um relacionamento lógico entre tipos de dados.
+Ex.: Dados de tipos diferentes usados com uma lógica, para definirem uma pessoa. INT para seu CPF, FLOAT para a altura, CHAR para nome...
+
+TIPOS ABSTRATOS DE DADOS ou "TAD":
+incluem as operações para a manipulação dos dados.
+Ex.: 
+    * Criação da estrutura,
+    * Inclusão de um elemento,
+    * Remoção de um elemento,
+    * Acesso a um elemento,
+    * entre outros.
+    
+VANTAGENS:
+-Encapsulamento e Segurança: usuário não tem acesso direto aos dados.
+-Flexibilidade e Reutilização: podemos alterar o "TAD" sem alterar as aplicações que o utilizam.
+
+Implementação é separada da Aplicação.

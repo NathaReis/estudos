@@ -1,0 +1,11 @@
+TAD com MODULARIZAÇÃO
+
+
+
+A convenção em linguagem C é preparar dois arquivos para implementar um "TAD"
+
+Arquivo ".H": protótipos das funções, tipos de ponteiro, e dados globalmente acessíveis
+
+Arquivo ".C": declaração do tipo de dados e implementação das suas funções.
+
+Assim separamos o "conceito" (definição do tipo) de sua "implementação".

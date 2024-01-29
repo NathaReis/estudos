@@ -1,0 +1,9 @@
+Vantagens
+Fácil para buscar, alterar dados internos
+
+Desvantagem
+Deslocação de posição ao remover ou inserir entre dois valores.
+
+Quando usar
+Usar qnd, listas pequenas, inserção e remoção apenas no final da lista, 
+tamanho máximo bem definido ou principal operação é a busca.

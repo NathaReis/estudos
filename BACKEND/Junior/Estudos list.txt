@@ -1,14 +1,14 @@
 BACKEND
 
-Linguagem 		NodeJS 
-Framework 		NestJS
-DB 	  		MySQL || PostgreSQL || MS Sql server
+Linguagem 		NodeJS ok
+Framework 		NestJS +/-
+DB 	  		MySQL || PostgreSQL || MS Sql server +/-
 Message Brokers 	RabbitMQ || Kafka || Kinesses SQS / SNS
 Search Engine 		Elasticsearch || Solr
-GIT
+GIT			+/-
 
 CONCEITUAL
-Estruturas de dados
+Estruturas de dados - Livro Estrutura de Dados e algoritmos com JavaScript de Loiane
 Sistemas operacionais
 Arquitetura orientada a serviços
 Design patterns
